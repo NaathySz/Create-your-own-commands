@@ -9,7 +9,7 @@ Put your commands in .cfg file and split with _|_.
 At the left is the command, and right what will print in chat. You can use colors too.
 
 Example: `test|{darkred}[TAG] {blue}This is a test`   
-You dont need put `!` at start. The trigger will active automatically and not work without.
+You dont need put `!` at start (unless in CS:S). The trigger will active automatically and not work without.
 More examples in cfg file.
 
 
