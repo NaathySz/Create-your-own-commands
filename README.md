@@ -5,7 +5,7 @@ A different (and better?) version of [this](https://forums.alliedmods.net/showth
 ***
 
 ### Infos
-Put your commands in .cfg file and split with _|_.
+Put your commands in .cfg file and split with `|`.
 At the left is the command, and right what will print in chat. You can use colors too.
 
 Example: `test|{darkred}[TAG] {blue}This is a test`   
