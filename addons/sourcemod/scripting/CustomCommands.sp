@@ -7,7 +7,7 @@ ArrayList gArray_LoadCommands;
 #pragma semicolon 1
 #pragma newdecls required
 
-#define PLUGIN_VERSION "1.0"
+#define PLUGIN_VERSION "1.01"
 
 public Plugin myinfo = 
 {
