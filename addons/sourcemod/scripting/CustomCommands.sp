@@ -47,7 +47,7 @@ void LoadCommands()
 
 public Action SayHook(int client, const char[] command, int args)  
 {
-    char arg[1024];
+    char arg[256];
     GetCmdArgString(arg, sizeof(arg));
     StripQuotes(arg);
     TrimString(arg);
@@ -61,11 +61,11 @@ public void checkccmds(int client, const char[] args)
 {
 	for (int i = 0; i < gArray_LoadCommands.Length; i++)
     {
-        char data[1024];
+        char data[128];
         gArray_LoadCommands.GetString(i, data, sizeof(data));
         
-        char sBuffer[2][2058];
-        ExplodeString(data, "|", sBuffer, 2, 2058);
+        char sBuffer[2][64];
+        ExplodeString(data, "|", sBuffer, 2, 64);
         if(StrContains(args, sBuffer[0], false) != -1)
         {
             CPrintToChat(client, "%s", sBuffer[1]);
