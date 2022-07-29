@@ -61,15 +61,15 @@ public void checkccmds(int client, const char[] args)
 {
 	for (int i = 0; i < gArray_LoadCommands.Length; i++)
     {
-        char data[128];
+        char data[1024];
         gArray_LoadCommands.GetString(i, data, sizeof(data));
         
-        char sBuffer[2][64];
-        ExplodeString(data, "|", sBuffer, 2, 64);
+        char sBuffer[2][2056];
+        ExplodeString(data, "|", sBuffer, 2, 2056);
         if(StrContains(args, sBuffer[0], false) != -1)
         {
             CPrintToChat(client, "%s", sBuffer[1]);
             return;
         }
     }
-}
+} 
